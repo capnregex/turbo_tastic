@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2022_01_03_210812) do
 
   create_table "messages", force: :cascade do |t|
     t.bigint "room_id", null: false
+    t.string "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["room_id"], name: "index_messages_on_room_id"
