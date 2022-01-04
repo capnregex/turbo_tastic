@@ -1,1 +1,5 @@
-<%= turbo_stream.append "messages", @message %>
+<%# this could potentially create duplicates
+    something is preventing the duplicates from showing,
+    the messages for other windows are passed through turbo streams
+    regardless, this seems to be redundant %>
+<%#= turbo_stream.append "messages", @message %>
